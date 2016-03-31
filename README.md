@@ -3,7 +3,6 @@
 This is a style guide for the Prism project. Its goal is to write clearer and more maintanable code throughout the production process.
 
 ## Javascript
----
 
 ### Classes
 Class names are written in camelCase and begin with an uppercase.
@@ -58,3 +57,28 @@ _Example_: `my-file-name`
 The same rule applies for folders
 
 _Example_: `my-folder-name`
+
+### Vue.js specifics
+Custom components, sections, transitions, directives... should be organised as such
+```
+.
+├── _vuejs-component
+|   ├── vuejs-component.js
+|   ├── vuejs-component.html
+|   └── vuejs-component.scss
+```
+_Examples_:
+
+**Note:** The folder and the file that are containing a class should have the same name than the class but with their respective rules.
+
+## Templates
+
+## CSS / SCSS
+
+### Variables
+
+### Nesting
+
+### Rules - order
+
+### Mixins
