@@ -19,12 +19,12 @@ export default class ClassName extends OtherClass {
 ```
 
 ### Variables
-Variable names should be written in camelCase and begin with a lowercase. Declaring a variable should be done by using `let`and not the `var`keyword. When declaring multiple variables, they should be seperated with a coma.
+Variable names should be written in camelCase and begin with a lowercase. Declaring a variable should be done by using `let`and not the `var`keyword.
 
 _Example_:
 ```
-let variableName      = value,
-    otherVariableName = value
+let variableName      = value
+let otherVariableName = value
 ```
 
 
