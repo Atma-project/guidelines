@@ -10,7 +10,7 @@ Class names are written in camelCase and begin with an uppercase.
 _Example_: `ClassName`
 
 _Complete example_:
-```
+```js
 export default class ClassName extends OtherClass {
     constructor(parameters) {
 
@@ -22,7 +22,7 @@ export default class ClassName extends OtherClass {
 Variable names should be written in camelCase and begin with a lowercase. Declaring a variable should be done by using `let`and not the `var`keyword.
 
 _Example_:
-```
+```js
 let variableName      = value
 let otherVariableName = value
 ```
@@ -42,7 +42,7 @@ Check out this article: [Semicolons aren't required](https://github.com/yyx99080
 They will be named in camelCase starting with a lowercase. All parameters should be on the same line as well as the opening bracket. The `function` keyword will not be used.
 
 _Example_:
-```
+``` js
 functionName(parameter1, parameter2, parameter3) {
     //function's core
 }
@@ -88,7 +88,7 @@ _Examples_:
 * Put blank lines between rule declarations.
 
 _Example_ :
-```
+``` scss
 .selector {
   border-radius: 50%;
   border: 2px solid white;
@@ -103,13 +103,13 @@ _Example_ :
 
 ### Variables
 
-Prefer dash-cased variable names (e.g. ```$my-variable```) over camelCased or snake_cased variable names. It is acceptable to prefix variable names that are intended to be used only within the same file with an underscore (e.g. ```$_my-variable```).
+Prefer dash-cased variable names (e.g. `$my-variable`) over camelCased or snake_cased variable names. It is acceptable to prefix variable names that are intended to be used only within the same file with an underscore (e.g. `$_my-variable`).
 
 ### Nesting
 
 Do not nest selectors more than three levels deep!
 
-```
+```scss
 .page-container {
   .content {
     .profile {
@@ -128,9 +128,9 @@ When selectors become this long, you're likely writing CSS that is:
 
 1. Property declarations
 
-    List all standard property declarations, anything that isn't an ```@include``` or a nested selector.
+    List all standard property declarations, anything that isn't an  `@include` or a nested selector.
     The properties should be grouped by type, example :
-    ```
+    ```scss
     .selector {
         /* Positioning */
         position: absolute;
@@ -169,9 +169,9 @@ When selectors become this long, you're likely writing CSS that is:
       }
     ```
 
-2. ```@include``` declarations
+2. `@include` declarations
 
-    Grouping ```@includes``` at the end makes it easier to read the entire selector.
+    Grouping `@includes` at the end makes it easier to read the entire selector.
 
 
 3.  Nested selectors
