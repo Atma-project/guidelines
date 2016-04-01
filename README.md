@@ -184,6 +184,7 @@ When selectors become this long, you're likely writing CSS that is:
         /* Animations */
         transition: all 2s ease;
         animation: my-keyframes 2s ease forwards;
+        will-change: opacity;
       }
     ```
 
