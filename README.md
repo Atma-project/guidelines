@@ -75,10 +75,105 @@ _Examples_:
 
 ## CSS / SCSS
 
+### Formatting
+
+* Use tabs (4 spaces) for indentation.
+* Never mix spaces and tabs for indentation.
+* Prefer dashes over camelCasing in class names.
+* Do not use ID selectors.
+* When using multiple selectors in a rule declaration, give each selector its own line.
+* Put a space before the opening brace { in rule declarations.
+* In properties, put a space after, but not before, the : character.
+* Put closing braces } of rule declarations on a new line.
+* Put blank lines between rule declarations.
+
+_Example_ :
+```
+.selector {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.one,
+.selector,
+.per-line {
+  // ...
+}
+```
+
 ### Variables
+
+Prefer dash-cased variable names (e.g. ```$my-variable```) over camelCased or snake_cased variable names. It is acceptable to prefix variable names that are intended to be used only within the same file with an underscore (e.g. ```$_my-variable```).
 
 ### Nesting
 
+Do not nest selectors more than three levels deep!
+
+```
+.page-container {
+  .content {
+    .profile {
+      // STOP!
+    }
+  }
+}
+```
+When selectors become this long, you're likely writing CSS that is:
+
+* Strongly coupled to the HTML (fragile) —OR—
+* Overly specific (powerful) —OR—
+* Not reusable
+
 ### Rules - order
 
-### Mixins
+1. Property declarations
+
+    List all standard property declarations, anything that isn't an ```@include``` or a nested selector.
+    The properties should be grouped by type, example :
+    ```
+    .selector {
+        /* Positioning */
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+
+        /* Display & Box Model */
+        display: inline-block;
+        overflow: hidden;
+        box-sizing: border-box;
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        border: 10px solid #333;
+        margin: 10px;
+
+        /* Text */
+        font-family: sans-serif;
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: right;
+        color: #fff;
+
+        /* Color */
+        background: #000;
+        fill: #123;
+
+        /* Other */
+        cursor: pointer;
+
+        /* Animations */
+        transition: all 2s ease;
+        animation: my-keyframes 2s ease forwards;
+      }
+    ```
+
+2. ```@include``` declarations
+
+    Grouping ```@includes``` at the end makes it easier to read the entire selector.
+
+
+3.  Nested selectors
+
+    Nested selectors, if necessary, go last, and nothing goes after them. Add whitespace between your rule declarations and nested selectors, as well as between adjacent nested selectors. Apply the same guidelines as above to your nested selectors.
