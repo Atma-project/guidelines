@@ -18,7 +18,7 @@ This is a style guide for the Prism project. Its goal is to write clearer and mo
     - [Formatting](#formatting)
     - [Variables](#Variables-1)
     - [Nesting](#nesting)
-    - [Rules - order](#rules--order)
+    - [Rules - order](#rules---order)
 
 ## Javascript
 
