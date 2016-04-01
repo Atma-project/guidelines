@@ -2,6 +2,24 @@
 
 This is a style guide for the Prism project. Its goal is to write clearer and more maintanable code throughout the production process.
 
+## Table of Contents
+
+  1. [Javascript](#javascript)
+    - [Classes](#classes)
+    - [Variables](#variables)
+    - [Constants](#constants)
+    - [Semi-colons](#semi-colons)
+    - [Functions](#functions)
+    - [Files](#files)
+    - [Folders](#folders)
+    - [Vue.js specifics](#vuejs-specifics)
+  2. [Templates](#templates)
+  3. [CSS / SCSS](#css--scss)
+    - [Formatting](#formatting)
+    - [Variables](#Variables-1)
+    - [Nesting](#nesting)
+    - [Rules - order](#rules--order)
+
 ## Javascript
 
 ### Classes
@@ -172,7 +190,6 @@ When selectors become this long, you're likely writing CSS that is:
 2. `@include` declarations
 
     Grouping `@includes` at the end makes it easier to read the entire selector.
-
 
 3.  Nested selectors
 
